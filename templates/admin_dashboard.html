@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2>👑 Admin Dashboard</h2>
+<div class="card p-4 shadow">
+<h4>All Registered Students</h4>
+<table class="table table-striped">
+<tr><th>Roll No</th><th>Name</th><th>Email</th></tr>
+{% for user in users %}
+<tr>
+<td>{{ user.roll_no }}</td>
+<td>{{ user.name }}</td>
+<td>{{ user.email }}</td>
+</tr>
+{% endfor %}
+</table>
+</div>
+{% endblock %}

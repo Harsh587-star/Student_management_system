@@ -1,0 +1,12 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h2 class="text-center">📝 Student Register</h2>
+<form method="POST" class="card p-4 shadow">
+<input type="text" name="roll_no" placeholder="Roll No" class="form-control mb-2" required>
+<input type="text" name="name" placeholder="Full Name" class="form-control mb-2" required>
+<input type="email" name="email" placeholder="Email" class="form-control mb-2" required>
+<input type="password" name="password" placeholder="Password" class="form-control mb-3" required>
+<button class="btn btn-success w-100">Create Account 🎉</button>
+</form>
+{% endblock %}
